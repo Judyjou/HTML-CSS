@@ -62,7 +62,7 @@
         }
 
         .wrap{
-            /* position: sticky; */
+            position: sticky;
             top: 0;
             z-index: 10;
         }
@@ -170,7 +170,7 @@
             width: 100%;
             display: flex;
             justify-content: space-around;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family: Tahoma;
             font-size: 20px;
         }
 
@@ -337,17 +337,20 @@
         .forth .A{
             width: 120px;
             height: 40px;
+            background-color: transparent;
             border-radius: 5px;
         }
         .forth .B{
             width: 40px;
             height: 40px;
+            background-color: transparent;
             border-radius: 5px;
         }
         .forth .C{
             /* padding-bottom: 10 0px; */
             width: 40px;
             height: 40px;
+            background-color: transparent;
             border-radius: 5px;
         }
         .forth .A:hover{           
@@ -409,13 +412,40 @@
         }
         .six{
             height: 1000px;
-            display: flex;
-            background-color: blanchedalmond;
+            display: flex;            
+            /* background-color: blanchedalmond; */
             justify-content: center;            
             font-family: Tahoma;
-        }        
+        }  
+
+        .six button{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin-bottom: 70px;
+            background-color:  transparent;
+            border-color: #000;
+        }  
+        .six .car{
+            width: 150px;
+            height: 40px;
+        } 
+        .six button:hover{
+            background-color: #ffe506;
+        }
+        .six .unbuy{
+            width: 150px;
+            height: 40px;
+            color: #eee;
+            border-color: #eee;
+        } 
+        .six .unbuy:hover{
+            background-color: #fff;
+        }  
         .six .item22{
-            display: flex;            
+            display: flex;
+            padding-left: 30px; 
+            padding-top: 100px;           
         }
         .six .item1{
             position: relative;
@@ -441,10 +471,45 @@
             color: #000;
             transition: .5s;
         }
-        .item22 h4{
-            font-size: 25px; 
-                  
+        .item2 h4{
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            vertical-align: middle;
+            margin-left: 280px;
+            padding-bottom: 70px;
+            /* background-color: aqua; */
+        } 
+        .item22 p{
+            font-size: 20px;
+            line-height: 30px;
+        }   
+        .item3{
+            padding-top: 70px;
         }
+        
+        /* .seven{   
+            position: relative;
+            width: 100%;          
+            display: flex;           
+             display: inline-block;
+            background-color: thistle;
+            
+        }
+        .seven h2{
+            position: absolute;            
+            padding: 20px 0;
+            width: 100%;
+            margin: auto;
+            text-align: center;          
+        }
+        .seven .item{
+            text-align: center;
+            margin: 20px 50px;
+        } */
+   
+        
+        
     </style>
 </head>
 
@@ -600,50 +665,60 @@
             <img src="/KARDANEpic/asset 59.jpg" alt="pumpkin">
             <h3>Looking&nbsp;for&nbsp;something<br>special?</h3>
             <p>shop&nbsp;now</p>
-        </div>
-        <div class="item22">
+        </div>        
+        <div class="item22">            
             <div class="item2">
-                <h4>On Sale</h4>
+                <h4>On Sale</h4>                
                 <div class="pic1">
                     <img src="/KARDANEpic/asset 41.jpg" alt="">
                     <h5>P28 Foods Formulated...</h5>
-                    <p>$29.00 – $36.00</p>
-                    <p class="car"><i class="fas fa-shopping-cart"></i>ADD&nbsp;TO&nbsp;CAR</p>
-                    <p class="eye"><i class="far fa-eye"></i></p>
-                    <p class="heart"><i class="fas fa-heart"></i></p>
+                    <p><b>$29.00 – $36.00</b></p>
+                    <button class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
                 </div>
                 <div class="pic2">
                     <img src="/KARDANEpic/asset 29.jpg" alt="">
                     <h5>KIND Nuts & Spices, ...</h5>
-                    <p>$12.00 – $30.00</p>
-                    <p class="unbuy"><i class="fas fa-ban"></i>UNAVLAILABLE</p>
-                    <p class="eye"><i class="far fa-eye"></i></p>
-                    <p class="heart"><i class="fas fa-heart"></i></p>
+                    <p><b>$12.00 – $30.00</b></p>
+                    <button class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>                    
                 </div>
             </div>
             <div class="item3">
                 <div class="pic3">
                     <img src="/KARDANEpic/asset 43.jpg" alt="">
                     <h5>Nabisco Mini Nilla W...</h5>
-                    <p>$30.00</p>
-                    <p class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</p>
-                    <p class="eye"><i class="far fa-eye"></i></p>
-                    <p class="heart"><i class="fas fa-heart"></i></p>
+                    <p><b>$30.00</b></p>
+                    <button class="car"><i class="fas fa-shopping-cart"></i>ADD&nbsp;TO&nbsp;CAR</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>                   
                 </div>
                 <div class="pic4">
                     <img src="/KARDANEpic/asset 32.jpg" alt="">
                     <h5>Kashi Cereal Bar, Ri...</h5>
-                    <p>$23.00</p>
-                    <p class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</p>
-                    <p class="eye"><i class="far fa-eye"></i></p>
-                    <p class="heart"><i class="fas fa-heart"></i></p>
+                    <p><b>$23.00</b></p>
+                    <button class="unbuy"><i class="fas fa-ban"></i>UNAVLAILABLE</button>
+                    <button><i class="far fa-eye"></i></button>
+                    <button><i class="fas fa-heart"></i></button>
                 </div>
             </div>
         </div>
-    
-    
-    
-    
+    </div>
+    <div class="seven">
+        <h2>Featured Posts</h2>
+        <!-- <div class="item"> -->
+            <div class="item1">
+                <img src="/KARDANEpic/asset 60.jpg" alt="plant">
+            </div>
+            <div class="item1">
+                <img src="KARDANEpic/asset 61.jpg" alt="yellow">
+            </div>
+            <div class="item1">
+                <img src="KARDANEpic/asset 62.jpg" alt="apple">
+            </div>
+        <!-- </div> -->
     </div>
 </body>
 

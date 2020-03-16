@@ -1,11 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="resert.css">
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .header {
+            display: flex;
+            margin: auto;
+            padding: 20px 100px;
+            font-family: Tahoma;
+            font-size: 14px;
+            position: relative;
+        }
+
+        /* .apic{
+        width: 6px;
+        height: 6px;
+        background-color: black;
+        border-radius: 50%;
+    }
+    .apic1{
+        width: 10px;
+        height: 12px;
+        background-color: black;
+        border-radius: 50%;
+    } */
+        .account {
+            padding: 5px;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .USD {
+            font-family: Tahoma;
+            font-size: 14px;
+            color: black;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        .header nav {
+            text-align: right;
+            width: 100%;
+        }
+
+        .Gline {
+            width: 100%;
+            height: 1px;
+            background-color: #eee;
+        }
+
+        .wrap{
+            /* position: sticky; */
+            top: 0;
+            z-index: 10;
+        }
+
+        .list {
+            width: 100%;
+            height: 200px;
+            background-color: #eee;
+            display: flex;
+        }
+
+        .list .KARDONE {
+            display: inline-block;
+            padding: 70px 110px;
+            position: relative;
+        }
+
+        .list .logotxt {
+            font-family: Tahoma;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            position: absolute;
+            font-size: 17px;
+            left: 110px;
+            bottom: 70px;
+            padding: 0px;
+        }
+
+        .list nav {
+            font-family: Tahoma;
+            text-align: right;
+            width: 100%;
+            padding-right: 150px;
+        }
+
+        .list nav a {
+            display: flex;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            margin: auto;
+            padding: 100px 10px;
+        }
+
+        .midlepic {
+            background-color: blanchedalmond;
+        }
+
+        .midlepic .wrap {
+            z-index: 0;
+            display: flex;
+        }
+
+        .midlepic .mtxt {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            font-size: 50px;
+            justify-content: center;
+            padding: 0 30px;
+        }
+
+        .midlepic .mtxt h2 {
+            margin-top: 20px;
+        }
+
+        .midlepic .mtxt h3 {
+            font-size: 62px;
+            color: #ffe506;
+            margin-top: 20px;
+        }
+
+        .midlepic .mpic {
+            font-family: sans-serif;
+        }
+
+        /* .midlepic .t010203{
+        display: flex;
+        flex-direction:row;
+        align-items: flex-end;
+        justify-content: center;
+    } */
+        .midlepic .more {
+            margin-top: 60px;
+            width: 200px;
+            height: 20px;
+            display: flex;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            justify-content: center;
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        .midlepic .more:hover {
+            background-color: #ffe506;
+            color: black;
+            transition: .5s;
+        }
+
+        .box {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+        }
+
+        .box img {
+            width: 250px;
+        }
+
+        .box .item {
+            position: relative;
+        }
+
+        .box .item p {
+            width: 250px;
+            position: absolute;
+            text-align: center;
+            bottom: 50px;
+            /* background-color: cadetblue; */
+        }
+
+        .item:hover {
+            color: #ffe506;
+        }
+
+        .thried {
+            display: flex;
+            justify-content: center;
+            background-color: blanchedalmond;
+        }
+
+        .thried .pic1 {
+            position: relative;
+            /* padding: 0 40px; */
+        }
+
+        .txt1 {
+            font-family: Tahoma;
+            font-size: 18px;
+            position: absolute;
+            font-size: 40px;
+            color: white;
+            bottom: 150px;
+            left: 50px;
+        }
+
+        .txt1 .Shoptext {
+            padding-top: 16px;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .txt1 .Shoptext:hover {
+            color: black;
+        }
+
+        .thried .pic2 {
+            position: relative;
+        }
+
+        .pic22 {
+            padding: 0 40px;
+        }
+
+        .txt2 {
+            color: white;
+            font-family: Tahoma;
+            font-size: 35px;
+            position: absolute;
+            top: 200px;
+            left: 40px;
+        }
+
+        .txt2 .Shoptext2 {
+            padding-top: 16px;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .txt2 .Shoptext2:hover {
+            color: black;
+        }
+
+        .pic3 {
+            position: relative;
+            padding-top: 25px;
+        }
+
+        .txt3 {
+            position: absolute;
+            color: white;
+            font-family: Tahoma;
+            font-size: 40px;
+            bottom: 150px;
+            left: 30px;
+        }
+
+        .txt3 .dont {
+            padding: 20px 0;
+            font-size: 16px;
+        }
+
+        .txt3 .Shoptext2 {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        .txt3 .Shoptext2:hover {
+            color: black;
+        }
+        .forth h3{
+            position: relative;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            font-family: Tahoma;
+            display: inline-block;
+            font-size: 23px;
+            background-color: cornflowerblue;
+        }
+        .forth{
+            background-color: #efa;
+            padding: 0 60px;
+        }
+        .forth .left{
+            position: absolute;
+            bottom: -1185px;
+            right: 230px;
+            width: 25px;
+            height: 25px;
+            /* background-color: #000; */
+        }
+        .forth .left:hover{
+            background-color:#ffe506; ;
+            color: black;
+            background-color: #eee;
+        }
+        .forth .right{
+            position: absolute;
+            bottom: -1185px;
+            right: 190px;
+            width: 25px;
+            height: 25px;
+            /* background-color: #000; */
+        }
+        .forth .right:hover{
+            background-color:#ffe506;
+            color: black;
+            background-color: #eee;
+        }
+
+        .forth .wrap{
+            display: flex;
+            z-index: 0;
+        }
+        .forth .forthcolumn{
+            margin: 20px 50px;
+            text-align: center;
+        }
+        .forth .money{
+            font-family: Tahoma;
+            font-size: 30px;
+            /* color: #aaa; */
+            padding: 20px;
+        }
+        .forth .A{
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .forth .B{
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .forth .C{
+            /* padding-bottom: 10 0px; */
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+        .forth .A:hover{           
+            transition: .5s;
+            background-color: #ffe506;
+        }
+        .forth .B:hover{
+            transition: .5s;
+            background-color: #ffe506;
+        }
+        .forth .C:hover{
+            transition: .5s;
+            background-color: #ffe506;
+        }
+        .five{
+            height: 750px;
+            position: relative;
+            display: flex;
+            /* background-color: wheat; */
+        }
+        .five img{
+            position: absolute;
+            left: 450px;
+            top: 200px;
+            justify-content: flex-end;
+        }
+        .txtoff{
+            width: 600px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            font-size: 80px;
+            font-family: Tahoma;
+            text-align: center;
+            padding-top: 100px;
+            top: 70px;
+            left: 170px;
+        }
+        .five p{
+            font-size: 80px;
+            padding-top: 30px;
+        }
+        .five .shop{
+            font-family: Tahoma;
+            text-align: center;
+            padding-top: 20px;
+            width: 140px;
+            height: 30px;
+            border-radius: 5px;
+            position: absolute;
+            top: 450px;
+            left: 400px;
+            background-color: #ffe506;
+        }
+        .five .shop:hover{
+            color: white;
+            background-color: black;
+            transition: .5s;
+        }
+        .six{
+            height: 1000px;
+            display: flex;
+            background-color: blanchedalmond;
+            justify-content: center;            
+            font-family: Tahoma;
+        }        
+        .six .item22{
+            display: flex;            
+        }
+        .six .item1{
+            position: relative;
+        }
+        .six h3{
+            position: absolute;
+            color: white;
+            font-family: Tahoma;
+            line-height: 50px;
+            bottom: 150px;
+            font-size: 30px;
+            left: 50px;
+        }
+        .item1 p{
+            position: absolute;
+            font-size: 20px;
+            color: #fff;
+            bottom: 100px;
+            left: 50px;
+            text-decoration: underline;
+        }
+        .item1 p:hover{
+            color: #000;
+            transition: .5s;
+        }
+        .item22 h4{
+            font-size: 25px; 
+                  
+        }
+    </style>
 </head>
+
 <body>
+    <div class="header">
+        <!-- <a href="#" >
+            <div class="apic"></div>
+            <div class="apic1"></div></a> -->
+        <a href="#"><p><i class="fas fa-user"></i></p></a>
+        <a href="#" class="account">My&nbsp;account</a>
+        <nav>
+            <a href="#"><p><i class="fas fa-search"></i></p></a>
+            <a href="#"><p><i class="fas fa-heart"></i></p></a>
+            <a href="#"><p><i class="fas fa-shopping-cart"></i></p></a>
+            <a href="#" class="USD">USD</a>
+        </nav>
+    </div>
+    <div class="Gline"></div>
+    <div class="wrap">
+        <div class="list">
+            <a href="#" class="KARDONE"><img src="/KARDANEpic/asset 1.jpg" alt="KARDONE"></a>
+            <a href="#"
+                class="logotxt">H&nbsp;E&nbsp;A&nbsp;L&nbsp;T&nbsp;L&nbsp;Y&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;O&nbsp;O&nbsp;D</a>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">COLLECTION</a>
+                <a href="#">BOLG</a>
+                <a href="#">SALE</a>
+                <a href="#">CONTACT&nbsp;US</a>
+            </nav>
+        </div>
+    </div>
+    <div class="midlepic">
+        <div class="wrap">
+            <img class="mpic" src="/KARDANEpic/asset 14.jpg" alt="pic" width="60%">
+            <!-- <div class="t010203"> 
+            <p>01</p>
+            <p>02</p>
+            <p>03</p>
+        </div> -->
+            <div class="mtxt">
+                <h2>Fresh&nbsp;and Delicious</h2>
+                <h3>ALL&nbsp;Year</h3>
+                <h3>Round!</h3>
+                <div class="more">READ&nbsp;MORE</div>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="item">
+            <img src="/KARDANEpic/asset 50.jpg" alt="apple">
+            <p><b>Fresh&nbsp;Fruits</b></p>
+        </div>
+        <div class="item">
+            <img src="/KARDANEpic/asset 51.jpg" alt="veggies">
+            <p><b>Veggies</b></p>
+        </div>
+        <div class="item">
+            <img src="/KARDANEpic/asset 52.jpg" alt="fish">
+            <p><b>Fish</b></p>
+        </div>
+        <div class="item">
+            <img src="/KARDANEpic/asset 53.jpg" alt="nuts&seeds">
+            <p><b>Nuts&Seeds</b></p>
+        </div>
+        <div class="item">
+            <img src="/KARDANEpic/asset 54.jpg" alt="bread">
+            <p><b>Bread</b></p>
+        </div>
+        <div class="item">
+            <img src="/KARDANEpic/asset 55.jpg" alt="dairy">
+            <p><b>Dairy</b></p>
+        </div>
+    </div>
+
+    <div class="thried">
+        <div class="pic1">
+            <img src="/KARDANEpic/asset 56.jpg" alt="purple">
+            <div class="txt1">
+                <p>Best Quality Products</p>
+                <p class="Shoptext">Shop now</p>
+            </div>
+        </div>
+        <div class="pic22">
+            <div class="pic2">
+                <img src="/KARDANEpic/asset 57.jpg" alt="swt">
+                <div class="txt2">
+                    <p class="hot">Hot Deals: <br>CRAZY PRICE $2.99</p>
+                    <p class="Shoptext2">Shop now</p>
+                </div>
+            </div>
+            <div class="pic3">
+                <img src="/KARDANEpic/asset 58.jpg" alt="lemon">
+                <div class="txt3">
+                    <p>HURRY up!</p>
+                    <p class="dont">Don't miss your chance to be the first!</p>
+                    <p class="Shoptext2">Shop now</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="forth">
+        <h3>Featured&nbsp;Products</h3>
+        <!-- <div class="left">〈</div> -->
+        <!-- <div class="right">〉</div> -->
+        <div class="wrap">
+            <div class="forthcolumn">
+                <img src="/KARDANEpic/asset 9.webp" alt="P28">
+                <p>P28 Foods Formulated...</p>
+                <p class="money">-$26.00- $20.00 </p>
+                <button class="A">&nbsp;ADD&nbsp;TO&nbsp;CAR&nbsp;</button>
+                <button class="B">eyes</button>
+                <button class="C">heart</button>
+            </div>
+            <div class="forthcolumn">
+                <img src="/KARDANEpic/asset 10.webp" alt="P28">
+                <p>P28 Foods Formulated...</p>
+                <p class="money">$29.00 - $36.00</p>
+                <button class="A">&nbsp;ADD&nbsp;TO&nbsp;CAR&nbsp;</button>
+                <button class="B">eyes</button>
+                <button class="C">heart</button>
+            </div>
+            <div class="forthcolumn">
+                <img src="/KARDANEpic/asset 11.webp" alt="P28">
+                <p>KIND Nuts & Spices,...</p>
+                <p class="money">$12.00 - $30.00</p>
+                <button class="A">&nbsp;ADD&nbsp;TO&nbsp;CAR&nbsp;</button>
+                <button class="B">eyes</button>
+                <button class="C">heart</button>
+            </div>
+            <div class="forthcolumn">
+                <img src="/KARDANEpic/asset 12.webp" alt="P28">
+                <p>Justin's Nut Butter...</p>
+                <p class="money">-$33.00- $22.00</p>
+                <button class="A">&nbsp;ADD&nbsp;TO&nbsp;CAR&nbsp;</button>
+                <button class="B">eyes</button>
+                <button class="C">heart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="five">
+        <img src="/KARDANEpic/asset 40.jpg" alt="bluebarry">
+        <div class="txtoff"><b>20%&nbsp;OFF</b><br>
+            <p>Fresh&nbsp;Berries</p>
+        </div>
+        <div class="shop">SHOP NOW</div>
+    </div>
+    <div class="six">
+        <div class="item1">
+            <img src="/KARDANEpic/asset 59.jpg" alt="pumpkin">
+            <h3>Looking&nbsp;for&nbsp;something<br>special?</h3>
+            <p>shop&nbsp;now</p>
+        </div>
+        <div class="item22">
+            <div class="item2">
+                <h4>On Sale</h4>
+                <div class="pic1">
+                    <img src="/KARDANEpic/asset 41.jpg" alt="">
+                    <h5>P28 Foods Formulated...</h5>
+                    <p>$29.00 – $36.00</p>
+                    <p class="car"><i class="fas fa-shopping-cart"></i>ADD&nbsp;TO&nbsp;CAR</p>
+                    <p class="eye"><i class="far fa-eye"></i></p>
+                    <p class="heart"><i class="fas fa-heart"></i></p>
+                </div>
+                <div class="pic2">
+                    <img src="/KARDANEpic/asset 29.jpg" alt="">
+                    <h5>KIND Nuts & Spices, ...</h5>
+                    <p>$12.00 – $30.00</p>
+                    <p class="unbuy"><i class="fas fa-ban"></i>UNAVLAILABLE</p>
+                    <p class="eye"><i class="far fa-eye"></i></p>
+                    <p class="heart"><i class="fas fa-heart"></i></p>
+                </div>
+            </div>
+            <div class="item3">
+                <div class="pic3">
+                    <img src="/KARDANEpic/asset 43.jpg" alt="">
+                    <h5>Nabisco Mini Nilla W...</h5>
+                    <p>$30.00</p>
+                    <p class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</p>
+                    <p class="eye"><i class="far fa-eye"></i></p>
+                    <p class="heart"><i class="fas fa-heart"></i></p>
+                </div>
+                <div class="pic4">
+                    <img src="/KARDANEpic/asset 32.jpg" alt="">
+                    <h5>Kashi Cereal Bar, Ri...</h5>
+                    <p>$23.00</p>
+                    <p class="car"><i class="fas fa-shopping-cart"></i>CHOOSE&nbsp;VARIANT</p>
+                    <p class="eye"><i class="far fa-eye"></i></p>
+                    <p class="heart"><i class="fas fa-heart"></i></p>
+                </div>
+            </div>
+        </div>
     
+    
+    
+    
+    </div>
 </body>
+
 </html>

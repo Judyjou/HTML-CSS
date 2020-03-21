@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manufax</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.css">
+    <style type="text/css">
+    /* *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    } */
+        .topPrimary{
+            width: 100%;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            background-color: #333;
+            color: #fff;
+            font-size: 14px;
+            font-family: Lato, sans-serif;
+            padding-top: 10px;
+            height: 42px;
+            position: absolute;
+            z-index: 2;
+        }
+        .address {
+            /* padding: 10px 10px 10px 70px; */
+        }
+
+        .phone {
+            /* padding: 10px; */
+        }
+
+        .outerlink {
+            /* width: 100%; */
+            /* padding: 12px 40px; */
+            margin-left: auto;
+        }
+
+        .headNav {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            top: 50px;
+            /* padding-top: 90px; */
+        }  
+        .logo {
+            padding: 30px 65px;
+        }
+        .logo img{            
+            width: 100%;
+            
+        }
+
+        .headNav .navWrap {
+            font-family: Montserrat, sans-serif;
+            margin: auto;
+            font-size: 14px;
+            /* padding: 0 100px; */
+        }
+
+        .navWrap .blue {
+            color: #33CCFF;
+            text-decoration: none;
+        }
+
+        .navWrap .white {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            padding: 0 15px;
+        }
+
+        .navWrap a:hover {
+            color: #33CCFF;
+        }
+
+        .search {
+            margin: auto;
+        }
+ 
+        /* .search:hover{
+            
+        } */        
+        .maxPic{
+            width: 100%;
+            background-color: black;
+        }
+
+        .maxPic img {
+            width: 100%;
+            height: 950px;
+            /* object-fit: none; */
+            opacity: .5;
+            /* filter :brightness(.5) */
+        }
+
+        .mainPart{
+            color: #fff;
+            font-family: Montserrat, sans-serif;
+            position: absolute;
+            width: 100%;
+            top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* padding: 100px 0 30px; */
+            /* margin: 0; */
+            line-height: 0;
+            /* background-color: blueviolet; */
+        }
+        .seeLink {
+            width: 284.3px;
+            height: 59.6px;
+            background-color: #2ac5f4;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 29px 28px 20px 39px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;            
+        }
+        .seeLink:hover{
+            background-color: #001;
+        }
+        .mainPart .mainTitle{
+            font-size: 60px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 350px;
+            padding-bottom: 40px;
+        }
+        .mainPart .mainTxt{
+            font-size: 30px;
+        }
+        .mainPart .btn{
+            padding: 30px 0;
+        }
+        .mainPart button{
+            background-color: #fff;
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+        }
+        @media screen and (min-width: 375px){
+            .header{
+                flex-direction: column;
+            }  
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topPrimary">
+        <section class="header">
+            <div class="address">
+                <i class="fas fa-map-marker-alt" style="color:#33CCFF;"></i>
+                <span>
+                    Address:4578&nbsp;Marmora&nbsp;Road,&nbsp;Glasgow,D04&nbsp;89GR
+                </span>
+            </div>
+
+            <div class="phone">
+                <i class="fas fa-phone" style="color:#33CCFF;"></i>
+                <span>
+                    Phones:(800)123-0045;(800)&nbsp;123-0046
+                </span>
+            </div>
+            <div class="outerlink">
+                <span class="home"><a href="#"><i class="fab fa-facebook-f" style="color: #fff;"></i></a></span>
+                <a href="#"><i class="fab fa-twitter" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-vimeo-v" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-youtube" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-pinterest" style="color: #fff;"></i></a>
+                <a href="#"><i class="fab fa-instagram" style="color: #fff;"></i></a>
+            </div>
+        </section>        
+        <div class="maxPic">
+            <img src="/manufaxpic/asset 1.png" alt="mainPic">
+            <div class="mainPart">
+                <h5 class="mainTitle">CONSTRUCTION</h5>
+                <h5 class="mainTxt">
+                    SEE&nbsp;HOW&nbsp;A&nbsp;10-STORIES&nbsp;TOWER'S&nbsp;BEING&nbsp;BUILT,IN&nbsp;A&nbsp;TIME-LAPSE!</h5>
+                <a class="seeLink" href="#">SEE&nbsp;OUR&nbsp;RECENT&nbsp;PROJECTS</a>
+                <div class="btn">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>        
+                <section class="headNav">
+                    <div class="logo">
+                        <img src="/manufaxpic/asset 0.png" alt="MANUFAX">
+                    </div>
+                    <nav class="navWrap">
+                        <a class="blue" href="#"><b>HOME</b></a>
+                        <a class="white" href="#"><b>ABOUT</b></a>
+                        <a class="white" href="#"><b>SERVICES</b></a>
+                        <a class="white" href="#"><b>BLOG</b></a>
+                        <a class="white" href="#"><b>CONTACTS</b></a>
+                    </nav>
+                    <div class="search"><i class="fas fa-search" style="color: #fff;"></i></div>
+                </section>
+            </div>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

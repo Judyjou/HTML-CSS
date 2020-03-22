@@ -70,7 +70,7 @@
         .list {
             width: 100%;
             height: 200px;
-            background-color: #eee;
+            background-color: #fff;
             display: flex;
         }
 
@@ -487,25 +487,59 @@
         .item3{
             padding-top: 70px;
         }
-        .seven{
-            background-color: rgb(163, 214, 139);
-        }
+       
         .seven h2{            
             width: 100%;
             margin: auto;
             text-align: center;
             font-family: Tahoma;
-            /* display: inline-block; */
-            /* position: relative; */
             font-size: 23px;
-            background-color: #99e;
+            padding-top: 20px;
         }
-        .seven .wrap{
+        .warp{
             display: flex;
-            /* justify-content: space-between; */
-            /* text-align: center; */
-            /* vertical-align: middle; */
-            /* margin: 50px 70px 50px 70px; */
+            justify-content: center;            
+            margin: auto;
+            justify-content: space-around;
+            padding: 120px;
+            position: relative;
+        }
+        .itemtxt a:hover{
+            color: #ffe506;
+            transition: .5s;
+        }
+        .footer{
+            display: flex;            
+            font-family: Tahoma; 
+            justify-content: space-around;
+            
+        }
+        .footer .link{
+            display: flex;
+            flex-direction: column;
+        }
+        .linetxt h5{
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+        .linetxt a{
+            padding: 10px 0;
+            text-decoration: none;
+            color: #000;            
+        }
+        .ourShop{
+            line-height: 35px;
+        }
+        .footer a:hover{
+            color: #ffe506;
+            transition: .5s;
+        }
+        .end{
+            text-align: center;
+            padding-top: 20px;
+            background-color: #ffe506;
+            height: 40px;
+            width: 100%;
         }
     </style>
 </head>
@@ -706,26 +740,67 @@
     <div class="seven">
         <h2>Featured Posts</h2>
         <div class="warp">
-            <div class="item1">
+            <div class="itemtxt">
                 <img src="/KARDANEpic/asset 60.jpg" alt="plant">
                 <h5>29 January</h5>
-                <h3>12 Heavenly Fruits and Honey</h3>
+                <a>12 Heavenly Fruits and Honey</a>
                 <p>Caffeine and sugar may give you an energy spike, but the crash that follows will leave you feeling even more tired than before. However, great...</p>
             </div>
-            <div class="item1">
+            <div class="itemtxt">
                 <img src="KARDANEpic/asset 61.jpg" alt="yellow">
                 <h5>29 January</h5>
-                <h3>The Great Start of Your Weight</h3>
+                <a>The Great Start of Your Weight</a>
                 <p>Kids need energy for sports and play, so it’s important that they’re consuming a nutrient-dense snack about an hour before their activity that contains carbohydrates....</p>
             </div>
-            <div class="item1">
+            <div class="itemtxt">
                 <img src="KARDANEpic/asset 62.jpg" alt="apple">
                 <h5>29 January</h5>
-                <h3>The Products that Help You Boost the Energy</h3>
+                <a>The Products that Help You Boost the Energy</a>
                 <p>Hello, my dears! My name is mary and here, in my blog, I want to share with you my findings and useful thoughts about making...</p>
             </div>
         </div>
+
+    
     </div>
+
+    <div class="footer">
+        <div class="linetxt information">
+            <h5>Information</h5>
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>            
+        </div>
+        <div class="linetxt myAccount">
+            <h5>My Account</h5>
+            <div class="link">
+                <a href="#">My Account</a>
+                <a href="#">Order History</a>
+                <a href="#">Address</a>
+                <a href="#">Wishlist</a>
+            </div>
+            
+        </div>
+        <div class="linetxt ourShop">
+            <h5>Our Shop</h5>
+            <p>Adderss</p>
+            <p>4578 Marmora St, San Francisco D04 89GR</p>
+            <p class="phoneNumber">Phone</p>
+            <a href="#">1-800-1234-567</a>
+        </div>
+        <div class="linetxt newsletter">
+            <h5>Newsletter</h5>
+            <p>Join our mailing list</p>
+        </div>        
+    </div>
+    <footer>
+        <div class="end">
+            &copy; Healtly Food . Powered by Shopify
+        </div>        
+    </footer>
 </body>
 
 </html>

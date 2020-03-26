@@ -1,0 +1,59 @@
+.header {
+  border-bottom: 1px solid #ccc;
+}
+
+.header nav a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #e97;
+  color: #000;
+  text-decoration: none;
+}
+
+#menu-control {
+  position: absolute;
+  left: -100px;
+}
+
+@media screen and (max-width: 767px) {
+  input:checked ~ nav {
+    display: block;
+  }
+  nav {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+  }
+}
+
+.menu-btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.menu-btn span {
+  position: absolute;
+  height: 4px;
+  width: 20px;
+  background-color: #666;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  left: 0;
+  margin: auto;
+}
+
+.menu-btn span:nth-last-child(1) {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.menu-btn span:nth-last-child(3) {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+/*# sourceMappingURL=hairStyle.css.map */

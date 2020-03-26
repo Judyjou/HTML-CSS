@@ -1,0 +1,86 @@
+.header{
+    border-bottom: 1px solid #ccc;
+    nav a{
+        display: block;
+        padding: 10px 20px;
+        background-color: #e97;
+        color: #000;
+        text-decoration: none; 
+    } 
+}
+#menu-control{
+    position: absolute;
+    left: -100px;
+}
+@media screen and (max-width:767px){
+    input:checked~nav{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        left: 0;
+        top:50px;
+        display: none;        
+    }
+}
+.menu-btn{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #000;
+    position: relative;
+    span {
+        position: absolute;
+        height: 4px;
+        width: 20px;
+        background-color: #666;
+        top: 0;
+        right: 0;
+        bottom: 0px;
+        left: 0;
+        margin: auto;
+    }
+    span:nth-last-child(1) {
+        transform: translateY(-6px);
+    }
+    span:nth-last-child(3) {
+        transform: translateY(6px);
+    }
+}
+
+// .mainPart{
+//     background-color:#ccc;      
+//     ul, li{
+//         list-style: none;
+//     }
+//     i{
+//         color: #bbb;
+//     }
+//     a{
+//         vertical-align: baseline;
+//     }
+// }
+// .breadcrumb{
+//     ul, li{
+//         list-style: none;        
+//     }
+//     a{        
+//         color: #000;
+//     }
+//     a:hover{
+//         text-decoration: none;
+//     }
+//     font-size: 16px;
+//     position: sticky;    
+// }
+// .list-item+.list-item::before{
+//     display: inline-block;
+//     padding: 0 20px;
+//     content: '/';
+// }
+// .home a{
+//     color: pink;
+// }
+// .list a:hover{
+//     color: pink;
+// }

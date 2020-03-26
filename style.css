@@ -1,0 +1,171 @@
+@charset "UTF-8";
+.topHeader {
+  background-color: #eee;
+  padding: 10px 0px 2px;
+}
+
+.topHeader button {
+  font-size: 20px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.topHeader input {
+  background-color: transparent;
+  border: transparent;
+}
+
+.topHeader .shopcar i:hover {
+  color: pink;
+}
+
+.topHeader .search i:hover {
+  color: pink;
+}
+
+.topHeader #menu-control {
+  position: absolute;
+  left: -100px;
+}
+
+.topHeader nav {
+  display: none;
+}
+
+.topHeader input:checked ~ nav {
+  display: block;
+}
+
+.menu-btn {
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+
+.menu-btn span {
+  position: absolute;
+  height: 3px;
+  width: 20px;
+  background-color: #000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.menu-btn span:nth-child(1) {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.menu-btn span:nth-child(3) {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.menu button {
+  display: inline;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: pink;
+}
+
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.container .links i {
+  color: #ccc;
+  margin: 30px 5px 0 5px;
+}
+
+.container .links i:hover {
+  color: #000;
+}
+
+.navbar-brand {
+  color: #000;
+}
+
+.nav-item a {
+  color: #000;
+}
+
+.nav-item a:hover {
+  color: pink;
+}
+
+.home a {
+  color: pink;
+}
+
+.picBtn {
+  background-color: #fff;
+  color: #000;
+  margin-top: -70px;
+  border: none;
+}
+
+.picBtn a {
+  width: 160px;
+  height: 70px;
+  background-color: #fff;
+}
+
+.picBtn a:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.txtChoice {
+  padding: 50px 0;
+}
+
+.txtChoice a:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform: all .2s;
+          transform: all .2s;
+}
+
+.txtChoice p {
+  color: #000;
+}
+
+.txtChoice .new h1 {
+  color: #7dd0dc;
+}
+
+.txtChoice .we h1 {
+  color: #d4bcb5;
+}
+
+.txtChoice .on h1 {
+  color: #ffa488;
+}
+
+.txtChoice .txtSell::before {
+  content: '______________________▁▁____________________';
+}
+
+.txtChoice .txtSell::after {
+  color: #ccc;
+  content: '_____________________________________________';
+}
+/*# sourceMappingURL=style.css.map */

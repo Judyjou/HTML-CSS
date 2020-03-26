@@ -7,153 +7,108 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
-    <title>Hello, world!</title>
-    <style type="text/css">
-        .headerNav{
-            background-color: #122;
-            height: 60px;
-            color: #90caf9;
-            font-size: 12px;
-            font-family: "PT Sans",Arial, Helvetica, sans-serif;
-            display: flex;   
-            align-items: center;
-        }
-        .both{
-            display: flex;
-        }
-        .back{
-            padding: 0 20px;
-        }
-        .both:hover{
-            color: #80b9c8;
-        }
-        .outerLink{
-            padding: 0 40px;
-        }
-        .outerLink a{
-            color: #aaa;
-        }
-        .outerLink a:hover{
-            color: rgb(53, 53, 207);
-        }
-        .mediaSize{
-            padding: 0 20px;
-        }        
-        .medias{
-            padding: 0 10px;
-        }
-        .medias a{
-            color: #aaa;
-        }
-        .medias a:hover{
-            color: rgb(53, 53, 207);
-        }
-        .buyCar{
-            width: 200px;
-            height: 40px;
-            background-color: #e40;
-            font-size: 14px;
-            border-radius: 5px;
-            text-align: center;
-            padding-top: 10px; 
-            text-decoration: none;                       
-        }
-        .buyCar a{
-            color: #fff;
-        }
-        .buyCar:hover{
-            background-color: rgba(255, 99, 71, 0.815);
-        }
-        .chat{
-            width: 200px;
-            height: 40px;
-            border-radius: 3px;
-            text-align: center;
-            padding-top: 10px;
-            margin: auto;
-            /* margin-left: 20px; */
-            border:1px solid #aaa;           
-        }
-        .chat:hover{
-            background-color: #fff;
-        }
-        .chat a{
-            font-size: 14px;
-            color: #aaa;
-            text-decoration: none;
-        }
-        
-        .dollor{
-            margin: auto;
-            color: #76d48f;
-        }
-        .services{
-            width: 200px;
-            height: 60px;
-            padding-top: 20px;
-            border-radius: 3px;
-            background-color: #689;
-            text-align: center;
-            font-size: 14px;
-        }
-        .services a{
-            color: #bbb;
-            text-decoration: none;
-        }
-        .services a:hover{
-            color: rgb(53, 53, 207);
-        }
-        .btn{
-            margin: auto;
-        }
-        .btn button{
-            background-color: transparent;
-            border: transparent;
-            color: #ccc;
-        }
-        .btn button:hover{
-            color: rgb(53, 53, 207);
-        }
-        
-    </style>
+    <link rel="stylesheet" href="/fontawesome-free-5.12.1-web/css/all.css">
+    <link rel="stylesheet" href="/normalize.css">
+    
+    <title>Hair-Style</title>
+    <link rel="stylesheet" href="hairStyle.css">
   </head>
   <body>
-    <div class="headerNav w-100">
-        <div class="both">
-            <div class="back">
-                <a href="#"><i class="fas fa-angle-left fa-2x"style="color: #90caf9;"></i></a>
+    <div class="header  w-100 d-flex justify-content-around">
+        <div class="menu">
+            <input type="checkbox" id="menu-control">
+            <label class="menu-btn" for="menu-control">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="selection">
+                <p><b>Currency</b></p>
+                <a href="#">My Account</a><br>
+                <a href="#">Wishlist</a><br>
+                <a href="#">Checkout</a>
+            </nav>
+            <div class="rBar">
+                <div class="shopCar">
+                    <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                </div>
+                <div class="search">
+                    <form class="form-inline">
+                        <input class="blockSearch" type="search" placeholder="Search Store" aria-label="Search">
+                        <button class="btnSearch"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
             </div>
-            <div class="txt">
-                <a><b>Style Factory-Hair Care & Hair Responsive Shopify...</b></a>
-            </div> 
-        </div>
-              
-        <div class="outerLink">
-            <a href="#"><i class="fas fa-external-link-alt"></i></a>
-        </div>
-        <div class="mediaSize d-flex">
-            <div class="medias phone"><a href="#"><i class="fas fa-mobile fa-2x"></i></a></div>
-            <div class="medias ipad"><a href="#"><i class="fas fa-tablet fa-2x"></i></a></div>
-            <div class="medias desktop"><a href="#"><i class="fas fa-desktop fa-2x"></i></a></div>            
-        </div>
-        <div class="buyCar">
-            <a href="#"><i class="fas fa-shopping-cart"></i>&nbsp; Add to Cart</a>
-        </div>
-        <div class="chat">
-            <a href="#"><i class="far fa-comments"></i>&nbsp; Start Chat</a>
-        </div>
-        <div class="dollor"><span>$139</span></div>
-        <div class="services">
-            <a href="#"> <i class="fas fa-shopping-bag"></i> Popular services <i class="fas fa-angle-up"></i></a>
-        </div>
-        <div class="btn">
-            <button><i class="far fa-heart fa-2x"></i></button>
-            <button><i class="fas fa-angle-up fa-2x"></i></button>
         </div>
     </div>
+    <!-- <div class="mainPart d-flex flex-column align-items-center">
+        <div class="col-12 col-gl-4">
+            <div class="logo">
+                <a href="#"><img src="/hairPic/logo.jpg" alt="logo"></a>            
+            </div>
+        <div>
+        <div class="col-12 col-gl-4">
+            <div class="links">
+                <ul class="icons d-flex">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li> 
+                </ul>                        
+            </div>
+        </div>     
+    </div> -->
+
+ <!-- <div class="breadcrumb justify-content-center">
+        <nav class="mainBar">
+            <ul class="list d-flex">
+                <li class="list-item home"><a href="#">HOME</a></li>
+                <li class="list-item"><a href="#">PRODUCTS</a></li>
+                <li class="list-item"><a href="#">BLOG</a></li>
+                <li class="list-item"><a href="#">SALE</a></li>
+                <li class="list-item"><a href="#">ABOUT US</a></li>
+                <li class="list-item"><a href="#">CONECT US</a></li>
+            </ul>
+        </nav>
+    </div>
     
+    <div class="dropdown w-100">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            STYLE FACTORY
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">HOME</a>
+            <a class="dropdown-item" href="#">PRODUCTS</a>
+            <a class="dropdown-item" href="#">BLOG</a>
+            <a class="dropdown-item" href="#">SALE</a>
+            <a class="dropdown-item" href="#">ABOUT US</a>
+            <a class="dropdown-item" href="#">CONECT US</a>
+        </div>
+    </div> -->
+    
+    <!-- <div class="breadcrumb justify-content-center">
+        <nav class="mainBar">
+            <ul class="list d-flex">
+                <li class="list-item home"><a href="#">HOME</a></li>
+                <li class="list-item"><a href="#">PRODUCTS</a></li>
+                <li class="list-item"><a href="#">BLOG</a></li>
+                <li class="list-item"><a href="#">SALE</a></li>
+                <li class="list-item"><a href="#">ABOUT US</a></li>
+                <li class="list-item"><a href="#">CONECT US</a></li>
+            </ul>
+        </nav>
+    </div> -->
+    <!-- <div class="container-fluid w-100">
+        <div class="mainPic">
+            <img src="/hairPic/greeting_image.jpg" alt="mainPic">
+        </div>        
+    </div> -->
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

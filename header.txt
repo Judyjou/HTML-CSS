@@ -1,0 +1,137 @@
+<style type="text/css">
+        .headerNav {
+            background-color: #122;
+            height: 60px;
+            color: #90caf9;
+            font-size: 12px;
+            font-family: "PT Sans", Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+        }
+
+        .both {
+            display: flex;
+        }
+
+        .back {
+            padding: 0 20px;
+        }
+
+        .both:hover {
+            color: #80b9c8;
+        }
+
+        .outerLink {
+            padding: 0 40px;
+        }
+
+        .outerLink a {
+            color: #aaa;
+        }
+
+        .outerLink a:hover {
+            color: rgb(53, 53, 207);
+        }
+
+        .mediaSize {
+            padding: 0 20px;
+        }
+
+        .medias {
+            padding: 0 10px;
+        }
+
+        .medias a {
+            color: #aaa;
+        }
+
+        .medias a:hover {
+            color: rgb(53, 53, 207);
+        }
+
+        .buyCar {
+            width: 200px;
+            height: 40px;
+            background-color: #e40;
+            font-size: 14px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 10px;
+            text-decoration: none;
+        }
+
+        .buyCar a {
+            color: #fff;
+        }
+
+        .buyCar:hover {
+            background-color: rgba(255, 99, 71, 0.815);
+        }
+
+        .chat {
+            width: 200px;
+            height: 40px;
+            border-radius: 3px;
+            text-align: center;
+            padding-top: 10px;
+            margin: auto;
+            /* margin-left: 20px; */
+            border: 1px solid #aaa;
+        }
+
+        .chat:hover {
+            background-color: #fff;
+        }
+
+        .chat a {
+            font-size: 14px;
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .dollor {
+            margin: auto;
+            color: #76d48f;
+        }
+
+        .services {
+            width: 200px;
+            height: 60px;
+            padding-top: 20px;
+            border-radius: 3px;
+            background-color: #689;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .services a {
+            color: #bbb;
+            text-decoration: none;
+        }
+
+        .services a:hover {
+            color: rgb(53, 53, 207);
+        }
+
+        .btn {
+            margin: auto;
+        }
+
+        .btn button {
+            background-color: transparent;
+            border: transparent;
+            color: #ccc;
+        }
+
+        .btn button:hover {
+            color: rgb(53, 53, 207);
+        }
+
+        /* @media screen and (max-width: 374px){
+            .back{
+                margin-left: auto;
+            }
+            .buyCar{                
+            }            
+        } */
+    </style>
